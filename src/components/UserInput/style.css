@@ -1,0 +1,28 @@
+.user-input{
+    background-color: white;
+    width: 500px;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+}
+
+.input-group{
+    margin-bottom: 0.5rem;
+}
+
+button{
+    background-color: rgb(72, 35, 106);
+    color: white;
+    border-color: rgb(72, 35, 106);
+    padding: 0.25rem 0.5rem;
+}
+
