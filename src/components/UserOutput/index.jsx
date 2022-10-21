@@ -1,11 +1,16 @@
-import './style.css'
+import Card from "../Card";
+import "./style.css";
 
-const UserOutput = (props) =>{
-    return(
-        <div>
-            <p>{props.username}+{props.age}+ years old</p>
-        </div>
-    )
-}
+const UserOutput = (props) => {
+  return (
+    <Card className="users">
+      <ul>
+        {props.users.map((user) => {
+          return <Card>{user.name}</Card>;
+        })}
+      </ul>
+    </Card>
+  );
+};
 
 export default UserOutput;
