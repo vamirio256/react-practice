@@ -6,7 +6,13 @@ const UserOutput = (props) => {
     <Card className="users">
       <ul>
         {props.users.map((user) => {
-          return <Card>{user.name}</Card>;
+          return (
+            <li key={user.name}>
+              <Card>
+                {user.name} {user.age}
+              </Card>
+            </li>
+          );
         })}
       </ul>
     </Card>
