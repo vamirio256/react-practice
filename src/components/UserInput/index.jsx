@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "../Button";
 import Card from "../Card";
 import ErrorModal from "../ErrorModal";
+import Wrapper from "../Helpers/Wrapper";
 import "./style.css";
 
 const UserInput = (props) => {
@@ -43,7 +44,7 @@ const UserInput = (props) => {
   };
 
   return (
-    <div>
+    <Wrapper>
       {error && (
         <ErrorModal
           title={error.title}
@@ -72,7 +73,7 @@ const UserInput = (props) => {
           <Button type="submit">Add User</Button>
         </form>
       </Card>
-    </div>
+    </Wrapper>
   );
 };
 
